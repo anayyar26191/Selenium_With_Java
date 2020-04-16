@@ -47,7 +47,17 @@ public class Assignment4 {
 		
 		
 		//9. Close all windows of Browser 
-		driver.quit();
+		driver.close();
+		
+		driver.switchTo().window(wins.get(0));   //IST
+		//8.	After Switching Get the Title of Page 
+		String s =driver.getTitle();
+		System.out.println(s);
+		Thread.sleep(5000);	
+		
+		
+		//9. Close all windows of Browser 
+		driver.close();
 
 
 	}
