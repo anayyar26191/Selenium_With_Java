@@ -14,9 +14,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Verification_3 {
 
 	public static void main(String[] args) throws InterruptedException, AWTException {
+		//Launch Browser
 		System.setProperty("webdriver.chrome.driver", "/Users/nayyar/Desktop/Selenium_java/tools//chromedriver");
 		WebDriver driver = new ChromeDriver();
-		
+		//Open broswer
 		driver.get("https://www.gmail.com");
 		 Thread.sleep(1000);
 		 
@@ -36,7 +37,7 @@ public class Verification_3 {
 		Thread.sleep(6000);
 
 		//Fill PW TextBox
-		driver.findElement(By.xpath("//input[@name='password']")).sendKeys("Test-1234");
+		driver.findElement(By.xpath("//input[@name='password']")).sendKeys("Enter-PW");
 		Thread.sleep(5000);
 		
 		
@@ -84,7 +85,7 @@ public class Verification_3 {
 		
 		
 		
-		//Paste operation cmdV and Press Enter and release
+		//Paste operation cmdV and Press Enter and release for mac
 		
 		Robot r = new Robot();
 		//CMD +Tab needed
@@ -130,18 +131,7 @@ public class Verification_3 {
 		
 		Thread.sleep(10000);
 		
-		
-		
 		driver.close();
 			
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
 }
