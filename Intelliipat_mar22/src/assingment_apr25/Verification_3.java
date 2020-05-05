@@ -1,4 +1,4 @@
-package webDriver1;
+package assingment_apr25;
 
 import java.awt.AWTException;
 import java.awt.Robot;
@@ -14,10 +14,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Verification_3 {
 
 	public static void main(String[] args) throws InterruptedException, AWTException {
-		//Launch Browser
-		System.setProperty("webdriver.chrome.driver", "/Users/nayyar/Desktop/Selenium_java/tools//chromedriver");
+		System.setProperty("webdriver.chrome.driver", "/Users/macbookpro/Desktop/Selenium/tools//chromedriver");
 		WebDriver driver = new ChromeDriver();
-		//Open broswer
+		
 		driver.get("https://www.gmail.com");
 		 Thread.sleep(1000);
 		 
@@ -37,7 +36,7 @@ public class Verification_3 {
 		Thread.sleep(6000);
 
 		//Fill PW TextBox
-		driver.findElement(By.xpath("//input[@name='password']")).sendKeys("Enter-PW");
+		driver.findElement(By.xpath("//input[@name='password']")).sendKeys("password");
 		Thread.sleep(5000);
 		
 		
@@ -75,7 +74,7 @@ public class Verification_3 {
 		//import the Robot class from Awt package
 		
 		
-		StringSelection s= new StringSelection("Desktop/tulip.jpg");
+		StringSelection s= new StringSelection("/Users/macbookpro/Desktop/Selenium/image.jpg");
 		//Users/macbookpro/Desktop/Selenium
 		//System.out.println(s);
 		
@@ -85,38 +84,19 @@ public class Verification_3 {
 		
 		
 		
-		//Paste operation cmdV and Press Enter and release for mac
+		//Paste operation cmdV and Press Enter and release
 		
 		Robot r = new Robot();
-		//CMD +Tab needed
-		r.keyPress(KeyEvent.VK_META);
-		r.keyPress(KeyEvent.VK_TAB);
-		r.keyRelease(KeyEvent.VK_META);
-		r.keyRelease(KeyEvent.VK_TAB);
-		r.delay(500);
-		
-		//open Go to window
-		r.keyPress(KeyEvent.VK_META);
-		r.keyPress(KeyEvent.VK_SHIFT);
-		r.keyPress(KeyEvent.VK_G);
-		r.keyRelease(KeyEvent.VK_META);
-		r.keyRelease(KeyEvent.VK_SHIFT);
-		r.keyRelease(KeyEvent.VK_G);
-		
-		r.keyPress(KeyEvent.VK_META);
+		r.keyPress(KeyEvent.VK_CONTROL);
 		r.keyPress(KeyEvent.VK_V);
-		r.keyRelease(KeyEvent.VK_META);
 		r.keyRelease(KeyEvent.VK_V);
+		r.keyRelease(KeyEvent.VK_CONTROL);
 		
-		
-		//Press Enter Key to close the window and upload the window
-		
-		r.keyPress(KeyEvent.VK_ENTER);
-		r.keyRelease(KeyEvent.VK_ENTER);
-		r.delay(500);
+		//Enter
 		
 		r.keyPress(KeyEvent.VK_ENTER);
 		r.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(12000);
 		
 		//click on send button
 		driver.findElement(By.xpath("//div[text()='Send']")).click();
@@ -131,7 +111,18 @@ public class Verification_3 {
 		
 		Thread.sleep(10000);
 		
+		
+		
 		driver.close();
 			
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 }
