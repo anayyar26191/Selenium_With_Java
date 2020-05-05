@@ -12,7 +12,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class File_java_download {
 
 	public static void main(String[] args) throws InterruptedException, AWTException {
-		System.setProperty("webdriver.gecko.driver", "/Users/macbookpro/Desktop/Selenium/tools//geckodriver");
+		System.setProperty("webdriver.gecko.driver", "C:/Users/Ramez/Desktop/java/tools\\geckodriver.exe");;
 		WebDriver driver = new FirefoxDriver();
 		 driver.get("https://www.selenium.dev/downloads/");
 		 Thread.sleep(5000);
@@ -31,11 +31,11 @@ public class File_java_download {
 		 r.keyRelease(KeyEvent.VK_ENTER);	
 		 
 		 
-		 r.keyPress(KeyEvent.VK_META);
-		 r.keyPress(KeyEvent.VK_TAB);
+		// r.keyPress(KeyEvent.VK_META);
+		 //r.keyPress(KeyEvent.VK_TAB);
 		 
-		 r.keyRelease(KeyEvent.VK_META);
-		 r.keyRelease(KeyEvent.VK_TAB);
+		 //r.keyRelease(KeyEvent.VK_META);
+		// r.keyRelease(KeyEvent.VK_TAB);
 		 Thread.sleep(5000);
 		 r.keyPress(KeyEvent.VK_DOWN);
 		 r.keyRelease(KeyEvent.VK_DOWN);
