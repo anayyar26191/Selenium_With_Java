@@ -1,0 +1,56 @@
+//Put the DATA into clipboard
+		//image.jpg 
+		//Users/macbookpro/Desktop/Selenium
+		//import the Robot class from Awt package
+
+		StringSelection StringSelection = new StringSelection("Desktop//tulip.jpeg");
+	    Toolkit.getDefaultToolkit().getSystemClipboard().setContents(StringSelection, null);
+		/Users/macbookpro/Desktop
+		Thread.sleep(10000);
+		
+		//Paste operation cmd+V and Press Enter and release
+		Robot robot = new Robot();
+		
+		/*//This launches java applet, so we are using cmd+tab to shift the focus
+	    robot.keyPress(KeyEvent.VK_META);
+	    robot.keyPress(KeyEvent.VK_TAB);
+	    robot.keyRelease(KeyEvent.VK_META);
+	    robot.keyRelease(KeyEvent.VK_TAB);
+	    Thread.sleep(7000);*/
+
+	//Open Goto window
+	    robot.keyPress(KeyEvent.VK_META);
+	    robot.keyPress(KeyEvent.VK_SHIFT);
+	    robot.keyPress(KeyEvent.VK_G);
+	    robot.keyRelease(KeyEvent.VK_META);
+	    robot.keyRelease(KeyEvent.VK_SHIFT);
+	    robot.keyRelease(KeyEvent.VK_G);
+	    Thread.sleep(7000);
+	    
+	//Paste the clipboard value
+	    robot.keyPress(KeyEvent.VK_META);
+	    robot.keyPress(KeyEvent.VK_V);
+	    robot.keyRelease(KeyEvent.VK_META);
+	    robot.keyRelease(KeyEvent.VK_V);
+	    Thread.sleep(7000);
+	//Press Enter key to close the Goto window and Upload window
+	    robot.keyPress(KeyEvent.VK_ENTER);
+	    robot.keyRelease(KeyEvent.VK_ENTER);
+	
+	    robot.keyPress(KeyEvent.VK_ENTER);
+	    robot.keyRelease(KeyEvent.VK_ENTER);
+	    
+	    Thread.sleep(7000);
+/* 
+		r.keyPress(KeyEvent.VK_CONTROL);
+		r.keyPress(KeyEvent.VK_V);
+		r.keyRelease(KeyEvent.VK_V);
+		r.keyRelease(KeyEvent.VK_CONTROL);
+		
+		//Enter
+		
+		r.keyPress(KeyEvent.VK_ENTER);
+		r.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(12000);*/
+		
+	

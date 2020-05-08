@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" parallel="true">
+<!-- Executing multiple packages -->
+  <test name="Test1">
+    <packages>
+      <package name ="package1"/>
+       <package name ="package2"/>
+    </packages>
+  </test>
+   <!-- Executing multiple classes same packages --> 
+  <test name="Test2">
+    <classes>
+      <class name="selenium.testNG.Test_BefM_AftM"/>
+      <class name="selenium.testNG.Test_BefCl_AftCla"/>
+    </classes>
+    <!-- Executing multiple classes different packages -->
+  </test> <!-- Test -->
+  <test name="Test3">
+    <classes>
+      <class name="package1.Test_BefM_AftM"/>
+      <class name="selenium.testNG.Test_MultipleMethods2Priority"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+

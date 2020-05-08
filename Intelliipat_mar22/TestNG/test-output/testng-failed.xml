@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+  <test name="Test1(failed)" parallel="methods">
+    <classes>
+      <class name="package2.Test_BefCl_AftCla">
+        <methods>
+          <include name="teardown"/>
+          <include name="verifyGooglePage"/>
+          <include name="verifyIntelliipatPage"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- package2.Test_BefCl_AftCla -->
+      <class name="selenium.testNG.Test_BefCl_AftCla">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- selenium.testNG.Test_BefCl_AftCla -->
+      <class name="package2.Test_MultipleMethods2Priority">
+        <methods>
+          <include name="verifyFacebookTitle"/>
+        </methods>
+      </class> <!-- package2.Test_MultipleMethods2Priority -->
+      <class name="package1.Test_BefM_AftM">
+        <methods>
+          <include name="verifyGooglePage"/>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="verifyFacebookPage"/>
+          <include name="launchBrowser"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- package1.Test_BefM_AftM -->
+      <class name="selenium.testNG.Test_BefM_AftM">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- selenium.testNG.Test_BefM_AftM -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test name="Test2(failed)" parallel="methods">
+    <classes>
+      <class name="selenium.testNG.Test_BefCl_AftCla">
+        <methods>
+          <include name="verifyGooglePage"/>
+          <include name="verifyIntelliipatPage"/>
+          <include name="launchBrowser"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- selenium.testNG.Test_BefCl_AftCla -->
+      <class name="package2.Test_BefCl_AftCla">
+        <methods>
+          <include name="teardown"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- package2.Test_BefCl_AftCla -->
+      <class name="package1.Test_BefM_AftM">
+        <methods>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="launchBrowser"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- package1.Test_BefM_AftM -->
+      <class name="selenium.testNG.Test_BefM_AftM">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="teardown"/>
+          <include name="verifyFacebookPage"/>
+        </methods>
+      </class> <!-- selenium.testNG.Test_BefM_AftM -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+  <test name="Test3(failed)" parallel="methods">
+    <classes>
+      <class name="package2.Test_BefCl_AftCla">
+        <methods>
+          <include name="teardown"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- package2.Test_BefCl_AftCla -->
+      <class name="selenium.testNG.Test_BefCl_AftCla">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- selenium.testNG.Test_BefCl_AftCla -->
+      <class name="package1.Test_BefM_AftM">
+        <methods>
+          <include name="verifyGooglePage"/>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="verifyFacebookPage"/>
+          <include name="launchBrowser"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- package1.Test_BefM_AftM -->
+      <class name="selenium.testNG.Test_MultipleMethods2Priority">
+        <methods>
+          <include name="verifyFacebookTitle"/>
+        </methods>
+      </class> <!-- selenium.testNG.Test_MultipleMethods2Priority -->
+      <class name="selenium.testNG.Test_BefM_AftM">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- selenium.testNG.Test_BefM_AftM -->
+    </classes>
+  </test> <!-- Test3(failed) -->
+</suite> <!-- Failed suite [Suite] -->
