@@ -1,0 +1,16 @@
+object oriented programming
+functinal programming
+encapsulatiodata group
+abstraction -data hiding
+inheritance-child class access from super class
+polymorphism-many forms
+security flexibilty 
+re-usabitity
+loal variable
+global variables
+static-within the class and outside the methods of the class
+data common 
+non-static changing from object to object
+
+
+
