@@ -21,7 +21,7 @@ public class TestCase2 {
 		 login.click_Next();
 		 Thread.sleep(5000);
 		 //Fill Password TextBox
-		 login.type_password("Best-1234");
+		 login.type_password("pwd");
 		 Thread.sleep(4000);
 		 login.click_Next();
 		 Thread.sleep(5000);
