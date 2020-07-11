@@ -21,14 +21,14 @@ public class Verification_3 {
 		 Thread.sleep(1000);
 		 
 		//Fill Username
-		 driver.findElement(By.xpath("//input[@name='identifier']")).sendKeys("selenium.an@gmail.com");
+		 driver.findElement(By.xpath("//input[@name='identifier']")).sendKeys("selenium@gmail.com");
 		 Thread.sleep(1000);
 		 
 		 //clear the text from text box
 		 driver.findElement(By.xpath("//input[@name='identifier']")).clear();
 		 
 		 //Fill Username again
-		 driver.findElement(By.xpath("//input[@name='identifier']")).sendKeys("selenium.an.26@gmail.com");
+		 driver.findElement(By.xpath("//input[@name='identifier']")).sendKeys("selenium@gmail.com");
 		 Thread.sleep(5000);
 		 
 		 //Click on Next button
@@ -50,7 +50,7 @@ public class Verification_3 {
 		Thread.sleep(12000);
 		 
 		//fill to address
-		driver.findElement(By.name("to")).sendKeys("selenium.an.26@gmail.com");
+		driver.findElement(By.name("to")).sendKeys("selenium@gmail.com");
 		//driver.findElement(By.xpath("//textarea[@name='to']")).sendKeys("selenium.an.26@gmail.com");
 		Thread.sleep(7000);
 		

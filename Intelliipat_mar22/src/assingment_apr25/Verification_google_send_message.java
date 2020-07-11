@@ -22,7 +22,7 @@ public class Verification_google_send_message {
 		e.clear();
 		 
 		 //Fill Username again
-		e.sendKeys("selenium.an.26gmail.com");
+		e.sendKeys("seleniumgmail.com");
 		Thread.sleep(5000);
 		
 		//get Text not working
