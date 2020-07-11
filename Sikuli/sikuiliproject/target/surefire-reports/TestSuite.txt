@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: TestSuite
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 36.046 sec <<< FAILURE! - in TestSuite
-handlefileUpload(allClassfilehere.Test1_Sikuli1)  Time elapsed: 34.624 sec  <<< FAILURE!
-org.sikuli.script.FindFailed: Region: doFind: Image not loadable: \Users\nayyar\Desktop\Selenium_java\workspace1\sikuiliproject\src\sikuili_locators\Click_ChooseFile.png
-	at allClassfilehere.Test1_Sikuli1.handlefileUpload(Test1_Sikuli1.java:28)
-

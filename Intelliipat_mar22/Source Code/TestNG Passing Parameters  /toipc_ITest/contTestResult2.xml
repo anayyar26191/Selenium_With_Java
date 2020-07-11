@@ -1,0 +1,27 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" parallel="false">
+  <test name="Test">
+  
+  <parameter name="browser" value="firefox">
+  </parameter>
+  <parameter name="username" value="999999991">
+  </parameter>
+  <parameter name="password" value="chennai369">
+  </parameter>
+  
+ 
+  
+  
+    <classes>
+    
+    
+      <class name="toipc_ITest.Testresutcontext2">
+     
+      </class>
+      
+      
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
