@@ -20,7 +20,7 @@ public class Verification_google_login {
 		 driver.findElement(By.xpath("//input[@name='identifier']")).clear();
 		 
 		 //Fill Username aggain
-		 driver.findElement(By.xpath("//input[@name='identifier']")).sendKeys("selenium.an.26@gmail.com");
+		 driver.findElement(By.xpath("//input[@name='identifier']")).sendKeys("selenium.a@gmail.com");
 		 Thread.sleep(5000);
 		 
 		 //Click on Next button
